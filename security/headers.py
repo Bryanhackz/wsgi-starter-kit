@@ -10,7 +10,8 @@ def get_security_headers() -> dict[str, str]:
             "frame-ancestors 'none'; "
             "base-uri 'self'; "
             "form-action 'self'; "
-            "object-src 'none'"
+            "object-src 'none'; "
+            "upgrade-insecure-requests"
         ),
         "X-Content-Type-Options": "nosniff",
         "X-Frame-Options": "DENY",
