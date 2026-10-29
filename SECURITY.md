@@ -1,24 +1,16 @@
 # Security Policy
 
 ## Supported Versions
-Currently, only the latest `main` branch is supported with security updates.
+Currently, only the latest `main` branch is supported.
+
+## Scope
+This project is a foundational HTTP server built on WSGI. Its security posture focuses on HTTP response headers (CSP, HSTS, X-Frame-Options), path traversal prevention in static file serving, and Server-Side Rendering (SSR) safety. It is intended to be the base for internet-facing applications.
 
 ## Reporting a Vulnerability
-If you believe you have found a security vulnerability in any of our repositories, please report it privately.
+Please do not report security vulnerabilities through public GitHub issues. Send an email to **br4yangil006@gmail.com**. You should receive a response within 48 hours.
 
-**Please do not report security vulnerabilities through public GitHub issues.**
-
-Instead, please send an email to your-email@example.com. 
-
-You should receive a response within 48 hours. If for some reason you do not, please follow up via email to ensure we received your original message.
-
-Please include the following information in your report:
-- Type of issue (e.g., buffer overflow, SQL injection, cross-site scripting, etc.)
-- Full paths of source file(s) related to the manifestation of the issue
-- The location of the affected source code (tag/branch/commit or direct URL)
-- Any special configuration required to reproduce the issue
+Please include:
+- Type of issue (e.g., path traversal, header injection, XSS via SSR)
+- Full paths of source file(s) related to the issue
 - Step-by-step instructions to reproduce the issue
-- Proof-of-concept or exploit code (if possible)
-- Impact of the issue, including how an attacker might exploit the issue
-
-This information will help us triage your report more quickly.
+- Impact of the issue
