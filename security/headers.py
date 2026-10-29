@@ -16,4 +16,5 @@ def get_security_headers() -> dict[str, str]:
         "X-Frame-Options": "DENY",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Permissions-Policy": "geolocation=(), camera=(), microphone=()",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
     }
