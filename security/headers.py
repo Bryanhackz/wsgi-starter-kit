@@ -3,7 +3,7 @@ def get_security_headers() -> dict[str, str]:
         "Content-Security-Policy": (
             "default-src 'self'; "
             "script-src 'self'; "
-            "style-src 'self' 'unsafe-inline'; "
+            "style-src 'self'; "
             "img-src 'self' data:; "
             "font-src 'self'; "
             "connect-src 'self'; "
